@@ -40,6 +40,7 @@
 \usepackage[T1]{fontenc}
 \usepackage[default]{lato}
 \usepackage{enumitem} % For customizing lists
+\usepackage{multicol} % Para formato de múltiples columnas
 \usepackage{pgfplots} % Para gráficos de barras
 \pgfplotsset{compat=1.17}
 % Colores para el gráfico de barras (paleta azul-verde)
@@ -79,6 +80,38 @@
   {\small\faCalendar \hspace{0.5em}#3\hspace{2em}%
   \ifstrequal{#4}{}{}{\faMapMarker\hspace{0.5em}#4}\par}
   \medskip
+}
+
+% Redefinir wheelchart sin centering para poder posicionarlo manualmente
+\renewcommand{\wheelchart}[3]{%
+    \begingroup
+    \def\innerradius{#2}%
+    \def\outerradius{#1}%
+    \pgfmathsetmacro{\totalnum}{0}%
+    \foreach \value/\colour/\name in {#3} {%
+        \pgfmathparse{\value+\totalnum}%
+        \global\let\totalnum=\pgfmathresult%
+    }%
+    \begin{tikzpicture}
+      \pgfmathsetmacro{\wheelwidth}{\outerradius-\innerradius}
+      \pgfmathsetmacro{\midradius}{(\outerradius+\innerradius)/2}
+      \begin{scope}[rotate=-90]
+      \pgfmathsetmacro{\cumnum}{0}
+      \foreach \value/\width/\colour/\name in {#3} {
+            \pgfmathsetmacro{\newcumnum}{\cumnum + \value/\totalnum*360}
+            \pgfmathsetmacro{\percentage}{\value/\totalnum*100}
+            \pgfmathsetmacro{\midangle}{-(\cumnum+\newcumnum)/2}
+            \pgfmathparse{(-\midangle>180?"west":"east")} \edef\textanchor{\pgfmathresult}
+            \pgfmathparse{(-\midangle>180?"flush left":"flush right")} \edef\textalign{\pgfmathresult}
+            \pgfmathsetmacro\labelshiftdir{1-2*(-\midangle<180)}
+            \filldraw[draw=white,fill=\colour] (-\cumnum:\outerradius) arc (-\cumnum:-(\newcumnum):\outerradius) --
+            (-\newcumnum:\innerradius) arc (-\newcumnum:-(\cumnum):\innerradius) -- cycle;
+            \draw [*-,thin,emphasis] node [append after command={(\midangle:\midradius pt) -- (\midangle:\outerradius + 1ex) -- (\tikzlastnode)}] at (\midangle:\outerradius + 1ex) [xshift=\labelshiftdir*0.5cm,inner sep=1ex, outer sep=0pt, text width=\width,anchor=\textanchor,align=\textalign,font=\small,text=body]{\name};
+            \global\let\cumnum=\newcumnum
+        }
+      \end{scope}
+    \end{tikzpicture}\par
+    \endgroup
 }
 
 \begin{document}
@@ -189,6 +222,9 @@
 \item Apoyo en procesos licitatorios y desarrollo de nuevos negocios.
 \end{itemize}
 
+% Inicio de sección en dos columnas
+\begin{multicols}{2}
+
 \cvsection{Educación}
 \cvevent{Maestría en Ingeniería Química}{Universidad Nacional de Colombia}{2023--Actualidad}{Bogotá, Colombia}
 Trabajo de grado en curso: Comparación de métodos multicriterio para la selección de tecnologías de captura y aplicación de CO en industrias de alta contribución de emisiones. El proyecto integra tecnologías como absorción con aminas, membranas y adsorción en sólidos, evaluadas mediante herramientas como AHP, TOPSIS y Fuzzy TOPSIS.
@@ -196,21 +232,27 @@ Trabajo de grado en curso: Comparación de métodos multicriterio para la selecc
 \cvevent{Ingeniería Química}{Universidad Nacional de Colombia}{2013--2019}{Bogotá, Colombia}
 Trabajo de grado: Comparación de catalizadores para la hidrólisis de plasma con fines alimenticios. Formación sólida en procesos químicos, control de calidad y análisis fisicoquímico. Desarrolló experiencia práctica en la industria de fragancias, incluyendo muestreo, SAP y liberación de lotes.
 
+\cvsection{Idiomas}
+\cvskill{Español}{5}
+\divider
+\cvskill{Inglés}{3}
+
+\cvsection{Referencias}
+\cvref{Daniela Perdomo Morales, Ejecutiva comercial, Biopolar}{+57 313 8653659}{}
+\divider
+\cvref{Juan David Tuta Botero, Lider de ingeniería, Unosquare}{+57 3016395759}{}
+
+\columnbreak
+
 \cvsection{Un día en mi vida}
-\begin{center}
-\wheelchart{2.5cm}{0.5cm}{%
+\noindent\makebox[\columnwidth][l]{%
+\hspace{-3cm}\wheelchart{2.5cm}{0.5cm}{%
 35/12em/accent/Trabajar,
 20/10em/accent!60/Ocio,
 15/8em/accent!30/Descansar,
 10/14em/accent!10/Compartir con mi gato,
 10/9em/accent!40/Ejercicio,
-10/13em/accent!50/Familia y amigos}
-\end{center}
-
-\cvsection{Idiomas}
-\cvskill{Español}{5}
-\divider
-\cvskill{Inglés}{3}
+10/13em/accent!50/Familia y amigos}}
 
 \cvsection{Intereses}
 \cvachievement{\faBook}{Desarrollo Profesional}{Lectura sobre tendencias comerciales, sostenibilidad industrial y nuevas tecnologías energéticas.}
@@ -218,9 +260,6 @@ Trabajo de grado: Comparación de catalizadores para la hidrólisis de plasma co
 \cvachievement{\faLeaf}{Sostenibilidad}{Interés en energías renovables, captura de carbono y procesos industriales sostenibles.}
 \cvachievement{\faUsers}{Networking}{Participación en eventos comerciales, ferias industriales y comunidades profesionales.}
 
-\cvsection{Referencias}
-\cvref{Daniela Perdomo Morales, Ejecutiva comercial, Biopolar}{+57 313 8653659}{}
-\divider
-\cvref{Juan David Tuta Botero, Lider de ingeniería, Unosquare}{+57 3016395759}{}
+\end{multicols}
 
 \end{document}

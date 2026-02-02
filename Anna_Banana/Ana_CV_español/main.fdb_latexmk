@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1770052048.57991 "/home/juand/Projects/Curriculums/Anna_Banana/Ana_CV_español/main.tex" "main.pdf" "main" 1770052050.81033 0
+["pdflatex"] 1770053250.98355 "/home/juand/Projects/Curriculums/Anna_Banana/Ana_CV_español/main.tex" "main.pdf" "main" 1770053253.50458 0
   "/etc/texmf/web2c/texmf.cnf" 1753541334.40824 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/juand/Projects/Curriculums/Anna_Banana/Ana_CV_español/main.tex" 1770052048.26789 9160 39f707486d299883de04e01e343435e8 ""
+  "/home/juand/Projects/Curriculums/Anna_Banana/Ana_CV_español/main.tex" 1770053250.64859 11058 1a0607a2c80747857ed5f5e4481c3e71 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomethree.enc" 1463430686 2437 443c81fb50993bacedc5f9a206c322b0 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc" 1463430686 2679 32dd8ae231bf4a0752b98f62dc097183 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/lato/a_cl4kdn.enc" 1561498483 2908 33404fff2a7b8e169974e96af0be5333 ""
@@ -183,6 +183,7 @@
   "/usr/share/texlive/texmf-dist/tex/latex/tikzfill/tikzfill.image.sty" 1691524336 1120 ba535da48caa03bf1fd3f03ea87779f8 ""
   "/usr/share/texlive/texmf-dist/tex/latex/tikzfill/tikzlibraryfill.image.code.tex" 1691524336 10931 717eb52299f416934beb8b2b7cd8cee6 ""
   "/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty" 1698869629 12667 e4b5eb11e4b7239e6c8a52bbe074a6c6 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty" 1686341992 32515 51caec75eda9c8890135f12f1a4eddc3 ""
   "/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty" 1698869629 7147 d45559f8a31b8c53ada0640516660003 ""
   "/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty" 1700689882 7500 db31c3d04f8bc9010e47a5efbbace9ff ""
   "/usr/share/texlive/texmf-dist/tex/latex/trimspaces/trimspaces.sty" 1253232110 1380 971a51b00a14503ddf754cab24c3f209 ""
@@ -193,8 +194,8 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1770048377.92895 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1770048496 8214395 6f4669b1a8bb46ac90dc1c968e256a65 ""
   "altacv.cls" 1770050096.86728 8047 e879a496b8051fa63f4055ff1d9cccf2 ""
-  "main.aux" 1770052050.61716 32 ab05033ccbb38b00a31b200ccedf8001 "pdflatex"
-  "main.tex" 1770052048.26789 9160 39f707486d299883de04e01e343435e8 ""
+  "main.aux" 1770053253.31038 32 044b7f8fc9779af7531264e0c5c84b6d "pdflatex"
+  "main.tex" 1770053250.64859 11058 1a0607a2c80747857ed5f5e4481c3e71 ""
   "me.png" 1770050096.87931 50195 8e42aa26914e3df4ae54190173d00e52 ""
   (generated)
   "main.aux"
