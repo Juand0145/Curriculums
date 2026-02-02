@@ -200,6 +200,8 @@ INPUT /usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
 INPUT /usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
 INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/ragged2e/ragged2e.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/ragged2e/ragged2e.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/pgfplots/pgfplots.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/pgfplots/pgfplots.sty
 INPUT /usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex
@@ -307,6 +309,7 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/lato/TS1lato-TLF.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/lato/TS1lato-TLF.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/lato/TS1lato-TLF.fd
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/typoland/lato/Lato-Regular-TS1-TLF.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/typoland/lato/Lato-Italic-T1-TLF.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/typoland/lato/Lato-Bold-T1-TLF.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/typoland/lato/Lato-Bold-T1-TLF--base.tfm
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
@@ -329,6 +332,8 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/typoland/lato/Lato-Bold-T1-TLF--ba
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/typoland/lato/Lato-Regular-TS1-TLF.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/typoland/lato/Lato-Regular-TS1-TLF--base.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/enc/dvips/lato/a_rt66h3.enc
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/typoland/lato/Lato-Italic-T1-TLF.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/typoland/lato/Lato-Italic-T1-TLF--base.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/fontawesome/FontAwesome--fontawesometwo.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/typoland/lato/Lato-Regular-T1-TLF.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/fontawesome/FontAwesome--fontawesometwo.tfm
@@ -340,6 +345,7 @@ INPUT /usr/share/texlive/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomethree
 INPUT main.aux
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/fontawesome/FontAwesome.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/typoland/lato/Lato-Bold.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/typoland/lato/Lato-Italic.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/typoland/lato/Lato-Regular.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb

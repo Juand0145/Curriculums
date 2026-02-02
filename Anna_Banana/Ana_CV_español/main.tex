@@ -41,6 +41,7 @@
 \usepackage[default]{lato}
 \usepackage{enumitem} % For customizing lists
 \usepackage{multicol} % Para formato de múltiples columnas
+\usepackage{ragged2e} % Para justificar texto
 \usepackage{pgfplots} % Para gráficos de barras
 \pgfplotsset{compat=1.17}
 % Colores para el gráfico de barras (paleta azul-verde)
@@ -50,6 +51,14 @@
 \definecolor{colorCierre}{HTML}{6BC9A6}
 \definecolor{colorDificultades}{HTML}{8FD9B6}
 \definecolor{colorPruebas}{HTML}{B5E7A0}
+
+% Colores para el wheelchart (paleta azul-teal)
+\definecolor{wheel1}{HTML}{1B4F72}
+\definecolor{wheel2}{HTML}{2874A6}
+\definecolor{wheel3}{HTML}{1ABC9C}
+\definecolor{wheel4}{HTML}{48C9B0}
+\definecolor{wheel5}{HTML}{76D7C4}
+\definecolor{wheel6}{HTML}{A3E4D7}
 
 % If using xelatex or lualatex:
 % \setmainfont{Lato}
@@ -129,7 +138,7 @@
 
 \makecvheader
 
-\cvsection{Competencias por Empresa}
+\cvsection{Trayectoria Comercial}
 \begin{center}
 \begin{tikzpicture}
 \begin{axis}[
@@ -190,13 +199,20 @@
 \end{center}
 
 \cvsection{Experiencia Laboral}
-\cvevent{Ejecutiva Comercial}{Meico Solar}{Mayo 2024--Actualidad}{Bogotá, Colombia}
-
+\cvevent{Ejecutiva Comercial Senior - Especialista de Línea}{Meico Solar}{Mayo 2024--Actualidad}{Bogotá, Colombia}
+{\color{accent}\textbf{Ejecutiva Comercial}}
 \begin{itemize}
 \item Gestión comercial integral: prospección, identificación de necesidades, cotización, seguimiento estratégico y cierre de ventas con acompañamiento postventa.
 \item Realización de visitas de relacionamiento en Bogotá y el Eje Cafetero para fortalecer vínculos con clientes actuales y potenciales.
 \item Búsqueda de nuevas oportunidades comerciales basadas en el análisis de datos de grandes clientes del sector, con seguimiento estructurado y propuesta de estrategias de abordaje.
 \item Análisis del mercado y mantenimiento del CRM para identificar oportunidades.
+\end{itemize}
+
+{\color{accent}\textbf{Ascenso: Ejecutiva Comercial Senior - Especialista de Línea}} {\small\textit{(Octubre 2025)}}
+\begin{itemize}
+\item Gestión de cuentas clave y liderazgo en negociaciones estratégicas de línea de producto.
+\item Capacitación y mentoría al equipo comercial; seguimiento y control del presupuesto de línea.
+\item Diseño de estrategias comerciales: campañas de marketing, webinars y acompañamiento en forecast y cierre de negocios.
 \end{itemize}
 
 \cvevent{Asesora Técnica Comercial}{Olaflex SAS}{Julio 2022--Mayo 2024}{Bogotá, Colombia}
@@ -227,10 +243,10 @@
 
 \cvsection{Educación}
 \cvevent{Maestría en Ingeniería Química}{Universidad Nacional de Colombia}{2023--Actualidad}{Bogotá, Colombia}
-Trabajo de grado en curso: Comparación de métodos multicriterio para la selección de tecnologías de captura y aplicación de CO en industrias de alta contribución de emisiones. El proyecto integra tecnologías como absorción con aminas, membranas y adsorción en sólidos, evaluadas mediante herramientas como AHP, TOPSIS y Fuzzy TOPSIS.
+{\justifying Trabajo de grado en curso: Comparación de métodos multicriterio para la selección de tecnologías de captura y aplicación de CO en industrias de alta contribución de emisiones. El proyecto integra tecnologías como absorción con aminas, membranas y adsorción en sólidos, evaluadas mediante herramientas como AHP, TOPSIS y Fuzzy TOPSIS.\par}
 
 \cvevent{Ingeniería Química}{Universidad Nacional de Colombia}{2013--2019}{Bogotá, Colombia}
-Trabajo de grado: Comparación de catalizadores para la hidrólisis de plasma con fines alimenticios. Formación sólida en procesos químicos, control de calidad y análisis fisicoquímico. Desarrolló experiencia práctica en la industria de fragancias, incluyendo muestreo, SAP y liberación de lotes.
+{\justifying Trabajo de grado: Comparación de catalizadores para la hidrólisis de plasma con fines alimenticios. Formación sólida en procesos químicos, control de calidad y análisis fisicoquímico. Desarrolló experiencia práctica en la industria de fragancias, incluyendo muestreo, SAP y liberación de lotes.\par}
 
 \cvsection{Idiomas}
 \cvskill{Español}{5}
@@ -244,15 +260,15 @@ Trabajo de grado: Comparación de catalizadores para la hidrólisis de plasma co
 
 \columnbreak
 
-\cvsection{Un día en mi vida}
+\cvsection{Un día de trabajo}
 \noindent\makebox[\columnwidth][l]{%
 \hspace{-1.5cm}\wheelchart{2.5cm}{0.5cm}{%
-30/10em/accent/Gestión comercial,
-15/11em/accent!80/Networking,
-15/10em/accent!60/Planeación,
-15/12em/accent!40/Capacitación,
-10/8em/accent!30/Ejercicio,
-15/8em/accent!20/Reuniones}}
+30/10em/wheel1/Gestión\\comercial,
+15/11em/wheel2/Networking,
+15/10em/wheel3/Planeación,
+15/12em/wheel4/Capacitación,
+10/8em/wheel5/Ejercicio,
+15/8em/wheel6/Reuniones}}
 
 \cvsection{Intereses}
 \cvachievement{\faBook}{Desarrollo Profesional}{Lectura sobre tendencias comerciales, sostenibilidad industrial y nuevas tecnologías energéticas.}

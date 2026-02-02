@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1770053477.60819 "/home/juand/Projects/Curriculums/Anna_Banana/Ana_CV_español/main.tex" "main.pdf" "main" 1770053479.58388 0
+["pdflatex"] 1770056683.96639 "/home/juand/Projects/Curriculums/Anna_Banana/Ana_CV_español/main.tex" "main.pdf" "main" 1770056686.08488 0
   "/etc/texmf/web2c/texmf.cnf" 1753541334.40824 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/juand/Projects/Curriculums/Anna_Banana/Ana_CV_español/main.tex" 1770053476.62324 11063 6da666533d444624e1b3933a087f576a ""
+  "/home/juand/Projects/Curriculums/Anna_Banana/Ana_CV_español/main.tex" 1770056683.33447 11939 e5cefea359f6dfb8b8c0cef0fb225d4e ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomethree.enc" 1463430686 2437 443c81fb50993bacedc5f9a206c322b0 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc" 1463430686 2679 32dd8ae231bf4a0752b98f62dc097183 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/lato/a_cl4kdn.enc" 1561498483 2908 33404fff2a7b8e169974e96af0be5333 ""
@@ -18,6 +18,8 @@
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/fontawesome/FontAwesome--fontawesometwo.tfm" 1463430686 1360 76c648952c3cfb458d3ca1d9dde7e9bf ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/typoland/lato/Lato-Bold-T1-TLF--base.tfm" 1508701834 1752 aa8a9a51afbe0c049fcf83621d6260a5 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/typoland/lato/Lato-Bold-T1-TLF.tfm" 1561498483 87492 7b51503c59ec74593309019708c7ca72 ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/typoland/lato/Lato-Italic-T1-TLF--base.tfm" 1561151678 1888 3ec6bb03fd856bf4662a97cf4e6d2192 ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/typoland/lato/Lato-Italic-T1-TLF.tfm" 1561498483 89816 ab88f462f874ec440ebbf7ae64eb1968 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/typoland/lato/Lato-Regular-T1-TLF--base.tfm" 1508701834 1740 a07ca8bf01c702c857120dc5d0acad8b ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/typoland/lato/Lato-Regular-T1-TLF.tfm" 1561498483 87408 f973e06002751c62a44cc0a6b9479d71 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/typoland/lato/Lato-Regular-TS1-TLF--base.tfm" 1561151678 1440 0ce64e417eb830e7eee4e40070126c6d ""
@@ -26,8 +28,10 @@
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb" 1248133631 33993 9b89b85fd2d9df0482bd47194d1d3bf3 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/fontawesome/FontAwesome.pfb" 1463430686 173219 54847ac27638e1e28852258f5be2fa20 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/typoland/lato/Lato-Bold.pfb" 1561498483 440414 ec7bef9aca5d79a80bbd76185c8c7134 ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/typoland/lato/Lato-Italic.pfb" 1561498483 472156 f4bc4b13f4231ad168df6d155c6be129 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/typoland/lato/Lato-Regular.pfb" 1561498483 444904 de6a6df3ed74129eebd99fc724b7f3fb ""
   "/usr/share/texlive/texmf-dist/fonts/vf/typoland/lato/Lato-Bold-T1-TLF.vf" 1561151678 1796 d561e276e9aaf4a3675188af3d5f02aa ""
+  "/usr/share/texlive/texmf-dist/fonts/vf/typoland/lato/Lato-Italic-T1-TLF.vf" 1561151678 1800 49873db817ca461c96cadb7ac4d94beb ""
   "/usr/share/texlive/texmf-dist/fonts/vf/typoland/lato/Lato-Regular-T1-TLF.vf" 1561151678 1800 bf51c780b92cccea55b4444e6eb9015c ""
   "/usr/share/texlive/texmf-dist/fonts/vf/typoland/lato/Lato-Regular-TS1-TLF.vf" 1561151678 2108 80b832e5c14e808cf8d60bc9685683da ""
   "/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1461363279 71627 94eb9990bed73c364d7f53f960cc8c5b ""
@@ -176,6 +180,7 @@
   "/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty" 1601326656 274 5ae372b7df79135d240456a1c6f2cf9a ""
   "/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty" 1601326656 325 f9f16d12354225b7dd52a3321f085955 ""
   "/usr/share/texlive/texmf-dist/tex/latex/pgfplots/pgfplots.sty" 1496704190 4904 ee78b44e85d6fccf08cd99370557481e ""
+  "/usr/share/texlive/texmf-dist/tex/latex/ragged2e/ragged2e.sty" 1687466457 10085 3dececaeed388e31285c366e124c0c4e ""
   "/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbskins.code.tex" 1704919444 84115 4b15eb64e93c3991d815e8170f8d1a95 ""
   "/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbskinsjigsaw.code.tex" 1704919444 10040 27e9c9197a2de0b5b4144c323ddb740a ""
   "/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty" 1704919444 103614 1ca07ac773e16c641eabdcbf98c7511d ""
@@ -194,8 +199,8 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1770048377.92895 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1770048496 8214395 6f4669b1a8bb46ac90dc1c968e256a65 ""
   "altacv.cls" 1770050096.86728 8047 e879a496b8051fa63f4055ff1d9cccf2 ""
-  "main.aux" 1770053479.41824 32 044b7f8fc9779af7531264e0c5c84b6d "pdflatex"
-  "main.tex" 1770053476.62324 11063 6da666533d444624e1b3933a087f576a ""
+  "main.aux" 1770056685.91957 32 044b7f8fc9779af7531264e0c5c84b6d "pdflatex"
+  "main.tex" 1770056683.33447 11939 e5cefea359f6dfb8b8c0cef0fb225d4e ""
   "me.png" 1770050096.87931 50195 8e42aa26914e3df4ae54190173d00e52 ""
   (generated)
   "main.aux"
