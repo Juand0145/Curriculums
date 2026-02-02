@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1770049718.42862 "/home/juand/Projects/cv/Ana_CV_español/main.tex" "main.pdf" "main" 1770049720.31766 0
+["pdflatex"] 1770052048.57991 "/home/juand/Projects/Curriculums/Anna_Banana/Ana_CV_español/main.tex" "main.pdf" "main" 1770052050.81033 0
   "/etc/texmf/web2c/texmf.cnf" 1753541334.40824 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/juand/Projects/cv/Ana_CV_español/main.tex" 1770049682.18484 8526 d9900c240ae6fc06c20143a97b672a39 ""
+  "/home/juand/Projects/Curriculums/Anna_Banana/Ana_CV_español/main.tex" 1770052048.26789 9160 39f707486d299883de04e01e343435e8 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomethree.enc" 1463430686 2437 443c81fb50993bacedc5f9a206c322b0 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc" 1463430686 2679 32dd8ae231bf4a0752b98f62dc097183 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/lato/a_cl4kdn.enc" 1561498483 2908 33404fff2a7b8e169974e96af0be5333 ""
@@ -192,12 +192,10 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1770048377.92895 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1770048496 8214395 6f4669b1a8bb46ac90dc1c968e256a65 ""
-  "altacv.cls" 1753545569.5099 8047 e879a496b8051fa63f4055ff1d9cccf2 ""
-  "main.aux" 1770049720.15721 32 044b7f8fc9779af7531264e0c5c84b6d "pdflatex"
-  "main.tex" 1770049682.18484 8526 d9900c240ae6fc06c20143a97b672a39 ""
-  "me.png" 1753540470.695 50195 8e42aa26914e3df4ae54190173d00e52 ""
-  "page1sidebar.tex" 1753548098.25525 2089 a73acfd903bfafdcda921df58db83306 ""
-  "page2sidebar.tex" 1753546847.72953 618 7832ff55d431e9c77af506aaba23c29e ""
+  "altacv.cls" 1770050096.86728 8047 e879a496b8051fa63f4055ff1d9cccf2 ""
+  "main.aux" 1770052050.61716 32 ab05033ccbb38b00a31b200ccedf8001 "pdflatex"
+  "main.tex" 1770052048.26789 9160 39f707486d299883de04e01e343435e8 ""
+  "me.png" 1770050096.87931 50195 8e42aa26914e3df4ae54190173d00e52 ""
   (generated)
   "main.aux"
   "main.log"

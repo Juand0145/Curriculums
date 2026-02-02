@@ -28,8 +28,10 @@
 %% Academicons.ttf in your operating system's font %% folder.
 
 
-% Change the page layout if you need to
-\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1cm,bottom=1cm}
+% Geometría de ancho completo para página 1
+\geometry{left=1cm,right=1cm,top=1cm,bottom=1cm}
+% Guardar geometría de dos columnas para página 2
+\newcommand{\twocolgeometry}{\newgeometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1cm,bottom=1cm}}
 
 % Change the font if you want to.
 
@@ -68,6 +70,17 @@
 %% sample.bib contains your publications
 % \addbibresource{sample.bib} % Comentado - no se usan publicaciones
 
+% Redefinir cvevent para que fecha y ubicación estén más juntos
+\renewcommand{\cvevent}[4]{%
+  {\large\color{emphasis}#1\par}
+  \smallskip
+  \textbf{\color{accent}#2}\par
+  \smallskip
+  {\small\faCalendar \hspace{0.5em}#3\hspace{2em}%
+  \ifstrequal{#4}{}{}{\faMapMarker\hspace{0.5em}#4}\par}
+  \medskip
+}
+
 \begin{document}
 \name{Ana María \newline Albarracín Noreña}
   \tagline{ Ejecutiva Comercial B2B}
@@ -81,30 +94,69 @@
   \textcolor{accent}{\faMapMarker}\hspace{0.5em}Tarjeta profesional: 26272
 }
 
-%% Make the header extend all the way to the right, if you want. Extend the right margin by 8cm (=6.8cm marginparwidth + 1.2cm marginparsep)
-\begin{adjustwidth}{}{-7.2 cm}
 \makecvheader
-\end{adjustwidth}
 
-%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
-%% You can always just use \marginpar{...} if you do
-%% not need to align the top of the contents to any
-%% \cvsection title in the "main" bar.
-%\cvevent{Consultant Engineer }{Contact and Business IT Ltda}{April 2014 -- March 2014}{Bogota, Colombia}
-%Test analyst for banking internet platform.
-%\divider
+\cvsection{Competencias por Empresa}
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+    ybar,
+    width=16cm,
+    height=6cm,
+    bar width=8pt,
+    ylabel={Desempeño (\%)},
+    ymin=0,
+    ymax=115,
+    ytick={0,20,40,60,80,100},
+    symbolic x coords={Meico Solar, Olaflex, Química AMG},
+    xtick=data,
+    x tick label style={font=\normalsize},
+    y tick label style={font=\small},
+    ylabel style={font=\normalsize},
+    legend style={
+        at={(0.5,-0.15)},
+        anchor=north,
+        legend columns=6,
+        font=\small,
+        /tikz/every even column/.append style={column sep=0.4cm}
+    },
+    nodes near coords,
+    nodes near coords style={font=\tiny, above},
+    every node near coord/.append style={yshift=1pt},
+    enlarge x limits=0.25,
+    grid=major,
+    grid style={dashed, gray!30},
+]
+% B2B - Azul oscuro
+\addplot[fill=colorB2B, draw=colorB2B!80] coordinates {
+    (Meico Solar,100) (Olaflex,80) (Química AMG,40)
+};
+% Prospección
+\addplot[fill=colorProspeccion, draw=colorProspeccion!80] coordinates {
+    (Meico Solar,90) (Olaflex,40) (Química AMG,80)
+};
+% CRM
+\addplot[fill=colorCRM, draw=colorCRM!80] coordinates {
+    (Meico Solar,100) (Olaflex,10) (Química AMG,30)
+};
+% Cierre
+\addplot[fill=colorCierre, draw=colorCierre!80] coordinates {
+    (Meico Solar,80) (Olaflex,50) (Química AMG,60)
+};
+% Dificultades
+\addplot[fill=colorDificultades, draw=colorDificultades!80] coordinates {
+    (Meico Solar,90) (Olaflex,60) (Química AMG,40)
+};
+% Pruebas
+\addplot[fill=colorPruebas, draw=colorPruebas!80] coordinates {
+    (Meico Solar,70) (Olaflex,100) (Química AMG,70)
+};
+\legend{B2B, Prospección, CRM, Cierre, Dificultades, Pruebas}
+\end{axis}
+\end{tikzpicture}
+\end{center}
 
-
-
-% \divider
-
-% \cvevent{Product Engineer}{Google}{23 June 1999 -- 2001}{Palo Alto, CA}
-
-% \begin{itemize}
-% \item Joined the company as employe \#20 and female employee \#1
-% \item Developed targeted advertisement in order to use user's search queries and show them related ads
-% \end{itemize}
-\cvsection[page1sidebar]{Experiencia Laboral}
+\cvsection{Experiencia Laboral}
 \cvevent{Ejecutiva Comercial}{Meico Solar}{Mayo 2024--Actualidad}{Bogotá, Colombia}
 
 \begin{itemize}
@@ -137,12 +189,16 @@
 \item Apoyo en procesos licitatorios y desarrollo de nuevos negocios.
 \end{itemize}
 
-% Se dejo un espacio de un centimetro, no olvidar ----------------------------------------------------------------------------------------------------------------------------------------------
-\newpage
-\cvsection[page2sidebar]{Un día en mi vida}
-\begin{adjustwidth}{}{-7.2cm}
+\cvsection{Educación}
+\cvevent{Maestría en Ingeniería Química}{Universidad Nacional de Colombia}{2023--Actualidad}{Bogotá, Colombia}
+Trabajo de grado en curso: Comparación de métodos multicriterio para la selección de tecnologías de captura y aplicación de CO en industrias de alta contribución de emisiones. El proyecto integra tecnologías como absorción con aminas, membranas y adsorción en sólidos, evaluadas mediante herramientas como AHP, TOPSIS y Fuzzy TOPSIS.
+
+\cvevent{Ingeniería Química}{Universidad Nacional de Colombia}{2013--2019}{Bogotá, Colombia}
+Trabajo de grado: Comparación de catalizadores para la hidrólisis de plasma con fines alimenticios. Formación sólida en procesos químicos, control de calidad y análisis fisicoquímico. Desarrolló experiencia práctica en la industria de fragancias, incluyendo muestreo, SAP y liberación de lotes.
+
+\cvsection{Un día en mi vida}
 \begin{center}
-\hspace{-7cm}\wheelchart{2cm}{0.4cm}{%
+\wheelchart{2.5cm}{0.5cm}{%
 35/12em/accent/Trabajar,
 20/10em/accent!60/Ocio,
 15/8em/accent!30/Descansar,
@@ -150,77 +206,21 @@
 10/9em/accent!40/Ejercicio,
 10/13em/accent!50/Familia y amigos}
 \end{center}
-\end{adjustwidth}
 
-\cvsection{Competencias por Empresa}
-\begin{adjustwidth}{}{-7.2cm}
-\begin{center}
-\hspace{-7.5cm}
-\begin{tikzpicture}
-\begin{axis}[
-    ybar,
-    width=12cm,
-    height=6cm,
-    bar width=4pt,
-    ylabel={Desempeño (\%)},
-    ymin=0,
-    ymax=115,
-    ytick={0,20,40,60,80,100},
-    symbolic x coords={Meico Solar, Olaflex, Química AMG},
-    xtick=data,
-    x tick label style={font=\small},
-    y tick label style={font=\small},
-    ylabel style={font=\small},
-    legend style={
-        at={(0.5,-0.18)},
-        anchor=north,
-        legend columns=3,
-        font=\tiny,
-        /tikz/every even column/.append style={column sep=0.3cm}
-    },
-    nodes near coords,
-    nodes near coords style={font=\tiny, above},
-    every node near coord/.append style={yshift=1pt},
-    enlarge x limits=0.25,
-    grid=major,
-    grid style={dashed, gray!30},
-]
-% B2B - Azul oscuro
-\addplot[fill=colorB2B, draw=colorB2B!80] coordinates {
-    (Meico Solar,100) (Olaflex,80) (Química AMG,40)
-};
-% Prospección - Naranja
-\addplot[fill=colorProspeccion, draw=colorProspeccion!80] coordinates {
-    (Meico Solar,90) (Olaflex,40) (Química AMG,80)
-};
-% CRM - Verde
-\addplot[fill=colorCRM, draw=colorCRM!80] coordinates {
-    (Meico Solar,100) (Olaflex,10) (Química AMG,30)
-};
-% Cierre - Morado
-\addplot[fill=colorCierre, draw=colorCierre!80] coordinates {
-    (Meico Solar,80) (Olaflex,50) (Química AMG,60)
-};
-% Dificultades - Rojo
-\addplot[fill=colorDificultades, draw=colorDificultades!80] coordinates {
-    (Meico Solar,90) (Olaflex,60) (Química AMG,40)
-};
-% Pruebas de producto
-\addplot[fill=colorPruebas, draw=colorPruebas!80] coordinates {
-    (Meico Solar,70) (Olaflex,100) (Química AMG,70)
-};
-\legend{B2B, Prospección, CRM, Cierre, Dificultades, Pruebas de producto}
-\end{axis}
-\end{tikzpicture}
-\end{center}
-\end{adjustwidth}
+\cvsection{Idiomas}
+\cvskill{Español}{5}
+\divider
+\cvskill{Inglés}{3}
+
+\cvsection{Intereses}
+\cvachievement{\faBook}{Desarrollo Profesional}{Lectura sobre tendencias comerciales, sostenibilidad industrial y nuevas tecnologías energéticas.}
+\cvachievement{\faPaw}{Bienestar Animal}{Cuidado de mascotas y apoyo a causas de protección animal.}
+\cvachievement{\faLeaf}{Sostenibilidad}{Interés en energías renovables, captura de carbono y procesos industriales sostenibles.}
+\cvachievement{\faUsers}{Networking}{Participación en eventos comerciales, ferias industriales y comunidades profesionales.}
 
 \cvsection{Referencias}
 \cvref{Daniela Perdomo Morales, Ejecutiva comercial, Biopolar}{+57 313 8653659}{}
 \divider
-
-\cvref{Juan David Tuta Botero, Director de ingeniería, Abatech}{+57 3016395759}{}
-
-\vspace{1cm}
+\cvref{Juan David Tuta Botero, Lider de ingeniería, Unosquare}{+57 3016395759}{}
 
 \end{document}
