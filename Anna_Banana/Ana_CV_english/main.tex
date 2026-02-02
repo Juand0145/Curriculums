@@ -1,0 +1,157 @@
+%%%%%%%%%%%%%%%%%
+% This is an example CV created using altacv.cls (v1.1, 21 November 2016) written by
+% LianTze Lim (liantze@gmail.com), based on the 
+% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+% 
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you want to use \orcid or the
+%% academicons icons, add "academicons"
+%% to the \documentclass options. 
+%% Then compile with XeLaTeX or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+\documentclass[10pt,a4paper]{altacv}
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages. 
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols.
+%% When using the "academicons" option,
+%% Compile with LuaLaTeX for best results. If you
+%% want to use XeLaTeX, you may need to install
+%% Academicons.ttf in your operating system's font %% folder.
+
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1cm,bottom=1cm}
+
+% Change the font if you want to.
+
+% If using pdflatex:
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{lato}
+\usepackage{enumitem} % For customizing lists
+
+% If using xelatex or lualatex:
+% \setmainfont{Lato}
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{1B4A5C}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+% \addbibresource{sample.bib} % Commented - no publications used
+
+\begin{document}
+\name{Ana María \newline Albarracín Noreña}
+  \tagline{B2B Sales Executive}
+% Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
+\photo{5.5cm}{me}
+% Personal info without bullet points
+\personalinfo{%
+  \textcolor{accent}{\faEnvelope}\hspace{0.5em}amalbarracin5@gmail.com \\
+  \textcolor{accent}{\faPhone}\hspace{0.5em}(+57) 312 825 5775 \\
+  \textcolor{accent}{\faLinkedin}\hspace{0.5em}linkedin.com/in/ana-maria-albarracin \\
+  \textcolor{accent}{\faEnvelopeO}\hspace{0.5em}jdtutab@unal.edu.co \\
+  \textcolor{accent}{\faMapMarker}\hspace{0.5em}Professional License: 26272
+}
+
+%% Make the header extend all the way to the right, if you want. Extend the right margin by 8cm (=6.8cm marginparwidth + 1.2cm marginparsep)
+\begin{adjustwidth}{}{-7.2 cm}
+\makecvheader
+\end{adjustwidth}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+%\cvevent{Consultant Engineer }{Contact and Business IT Ltda}{April 2014 -- March 2014}{Bogota, Colombia}
+%Test analyst for banking internet platform.
+%\divider
+
+
+
+% \divider
+
+% \cvevent{Product Engineer}{Google}{23 June 1999 -- 2001}{Palo Alto, CA}
+
+% \begin{itemize}
+% \item Joined the company as employe \#20 and female employee \#1
+% \item Developed targeted advertisement in order to use user's search queries and show them related ads
+% \end{itemize}
+\cvsection[page1sidebar]{Work Experience}
+\cvevent{Sales Executive}{Meico Solar}{May 2024--Present}{Bogotá, Colombia}
+
+\begin{itemize}
+\item Comprehensive commercial management: prospecting, needs identification, quotation, strategic follow-up and sales closing with post-sales support.
+\item Relationship visits in Bogotá and the Coffee Region to strengthen ties with current and potential clients.
+\item Searching for new commercial opportunities based on big client data analysis in the sector, with structured follow-up and strategic approach proposals.
+\item Market analysis and CRM maintenance to identify opportunities.
+\end{itemize}
+
+\cvevent{Commercial Technical Advisor}{Olaflex SAS}{July 2022--May 2024}{Bogotá, Colombia}
+
+\begin{itemize}
+\item Sales management of polyurethane products, including client visits and follow-up.
+\item Custom development proposals according to client's end use, including technical plant support, performance testing and personalized solution formulation.
+\item Marketing plan development and budget projections.
+\item Export coordination, legal and customs documentation management.
+\end{itemize}
+
+\cvevent{Commercial Advisor}{Química MG}{January 2022--July 2022}{Bogotá, Colombia}
+
+\begin{itemize}
+\item Participation in tenders and engineering projects.
+\item Commercial proposal development and client follow-up.
+\end{itemize}
+
+\cvevent{Project Manager}{Grupo Coral SAS}{January 2020--August 2021}{Bogotá, Colombia}
+
+\begin{itemize}
+\item Technical-commercial proposal development for public and private sector clients.
+\item Support in tender processes and new business development.
+\end{itemize}
+
+% Space of one centimeter left, don't forget ----------------------------------------------------------------------------------------------------------------------------------------------
+\newpage
+\cvsection[page2sidebar]{A Day in My Life}
+\begin{adjustwidth}{}{-7.2cm}
+\begin{center}
+\hspace{-7cm}\wheelchart{2cm}{0.4cm}{%
+35/12em/accent/Working,
+20/10em/accent!60/Leisure,
+15/8em/accent!30/Resting,
+10/14em/accent!10/Time with my cat,
+10/9em/accent!40/Exercise,
+10/13em/accent!50/Family and friends}
+\end{center}
+\end{adjustwidth}
+
+% \vspace{1cm}
+
+\cvsection{References}
+\cvref{Daniela Perdomo Morales, Commercial Executive, Biopolar}{+57 313 8653659}{}
+\divider
+
+\cvref{Juan David Tuta Botero, Engineering Director, Abatech}{+57 3016395759}{}
+
+\vspace{1cm}
+
+\end{document}
