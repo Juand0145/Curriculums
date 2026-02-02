@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1770058342.84913 "/home/juand/Projects/Curriculums/Anna_Banana/Ana_CV_español/main.tex" "main.pdf" "main" 1770058344.85485 0
+["pdflatex"] 1770058430.59795 "/home/juand/Projects/Curriculums/Anna_Banana/Ana_CV_español/main.tex" "main.pdf" "main" 1770058432.65485 0
   "/etc/texmf/web2c/texmf.cnf" 1753541334.40824 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/juand/Projects/Curriculums/Anna_Banana/Ana_CV_español/main.tex" 1770058342.50563 12468 50a710d34e64bb73d31967325acfda0c ""
+  "/home/juand/Projects/Curriculums/Anna_Banana/Ana_CV_español/main.tex" 1770058430.31945 12483 289268be42c45dcc9bc1f486c6c8acca ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomethree.enc" 1463430686 2437 443c81fb50993bacedc5f9a206c322b0 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc" 1463430686 2679 32dd8ae231bf4a0752b98f62dc097183 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/lato/a_cl4kdn.enc" 1561498483 2908 33404fff2a7b8e169974e96af0be5333 ""
@@ -199,8 +199,8 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1770048377.92895 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1770048496 8214395 6f4669b1a8bb46ac90dc1c968e256a65 ""
   "altacv.cls" 1770050096.86728 8047 e879a496b8051fa63f4055ff1d9cccf2 ""
-  "main.aux" 1770058344.67202 32 044b7f8fc9779af7531264e0c5c84b6d "pdflatex"
-  "main.tex" 1770058342.50563 12468 50a710d34e64bb73d31967325acfda0c ""
+  "main.aux" 1770058432.48083 32 044b7f8fc9779af7531264e0c5c84b6d "pdflatex"
+  "main.tex" 1770058430.31945 12483 289268be42c45dcc9bc1f486c6c8acca ""
   "me.png" 1770050096.87931 50195 8e42aa26914e3df4ae54190173d00e52 ""
   (generated)
   "main.aux"
