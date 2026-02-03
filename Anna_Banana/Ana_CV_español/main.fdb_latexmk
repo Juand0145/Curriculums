@@ -1,8 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1770058430.59795 "/home/juand/Projects/Curriculums/Anna_Banana/Ana_CV_español/main.tex" "main.pdf" "main" 1770058432.65485 0
+["pdflatex"] 1770131441.60032 "/home/juand/Projects/Curriculums/Anna_Banana/Ana_CV_español/main.tex" "main.pdf" "main" 1770131442.79585 0
   "/etc/texmf/web2c/texmf.cnf" 1753541334.40824 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/juand/Projects/Curriculums/Anna_Banana/Ana_CV_español/main.tex" 1770058430.31945 12483 289268be42c45dcc9bc1f486c6c8acca ""
-  "/usr/share/texlive/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomethree.enc" 1463430686 2437 443c81fb50993bacedc5f9a206c322b0 ""
+  "/home/juand/Projects/Curriculums/Anna_Banana/Ana_CV_español/main.tex" 1770131441.38533 13382 4fc7db00797dee23eb8fff91111e4ab1 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc" 1463430686 2679 32dd8ae231bf4a0752b98f62dc097183 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/lato/a_cl4kdn.enc" 1561498483 2908 33404fff2a7b8e169974e96af0be5333 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/lato/a_rt66h3.enc" 1561498483 3345 f5bff336afd6959239b79815a9c623d1 ""
@@ -14,7 +13,6 @@
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr9.tfm" 1136768653 1292 6b21b9c2c7bebb38aa2273f7ca0fb3af ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm" 1136768653 1116 933a60c408fc0a863a92debe84b2d294 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy9.tfm" 1136768653 1116 25a7bf822c58caf309a702ef79f4afbb ""
-  "/usr/share/texlive/texmf-dist/fonts/tfm/public/fontawesome/FontAwesome--fontawesomethree.tfm" 1463430686 808 fa82c08e99ce03a59bd6b6935f08982c ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/fontawesome/FontAwesome--fontawesometwo.tfm" 1463430686 1360 76c648952c3cfb458d3ca1d9dde7e9bf ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/typoland/lato/Lato-Bold-T1-TLF--base.tfm" 1508701834 1752 aa8a9a51afbe0c049fcf83621d6260a5 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/typoland/lato/Lato-Bold-T1-TLF.tfm" 1561498483 87492 7b51503c59ec74593309019708c7ca72 ""
@@ -150,7 +148,6 @@
   "/usr/share/texlive/texmf-dist/tex/latex/fontawesome/fontawesome.sty" 1463430686 2757 ee97743276dc242c78f33fd622e260ea ""
   "/usr/share/texlive/texmf-dist/tex/latex/fontawesome/fontawesomesymbols-generic.tex" 1465747999 33234 40b369fd6c8364bdcc88401c4c1db5bf ""
   "/usr/share/texlive/texmf-dist/tex/latex/fontawesome/fontawesomesymbols-pdftex.tex" 1463430686 46429 f7ffa71c62c5257edd5542253d4cea15 ""
-  "/usr/share/texlive/texmf-dist/tex/latex/fontawesome/ufontawesomethree.fd" 1465747999 533 8ef7321a43d7426394eae184116ae32c ""
   "/usr/share/texlive/texmf-dist/tex/latex/fontawesome/ufontawesometwo.fd" 1465747999 519 e730d6099b4b4ed4da396d7b545ddf49 ""
   "/usr/share/texlive/texmf-dist/tex/latex/fontaxes/fontaxes.sty" 1595539507 14310 41fdb35c51be792ddf00696848d0cfef ""
   "/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty" 1578002852 41601 9cf6c5257b1bc7af01a58859749dd37a ""
@@ -199,8 +196,8 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1770048377.92895 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1770048496 8214395 6f4669b1a8bb46ac90dc1c968e256a65 ""
   "altacv.cls" 1770050096.86728 8047 e879a496b8051fa63f4055ff1d9cccf2 ""
-  "main.aux" 1770058432.48083 32 044b7f8fc9779af7531264e0c5c84b6d "pdflatex"
-  "main.tex" 1770058430.31945 12483 289268be42c45dcc9bc1f486c6c8acca ""
+  "main.aux" 1770131442.6821 32 044b7f8fc9779af7531264e0c5c84b6d "pdflatex"
+  "main.tex" 1770131441.38533 13382 4fc7db00797dee23eb8fff91111e4ab1 ""
   "me.png" 1770050096.87931 50195 8e42aa26914e3df4ae54190173d00e52 ""
   (generated)
   "main.aux"

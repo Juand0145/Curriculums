@@ -82,7 +82,7 @@
 
 % Redefinir cvevent para que fecha y ubicación estén más juntos
 \renewcommand{\cvevent}[4]{%
-  {\large\color{emphasis}#1\par}
+  {\large\bfseries\color{emphasis}#1\par}
   \smallskip
   \textbf{\color{accent}#2}\par
   \smallskip
@@ -138,7 +138,7 @@
 
 \makecvheader
 
-\cvsection{Trayectoria Comercial}
+\cvsection{Habilidades Comerciales} 
 \begin{center}
 \begin{tikzpicture}
 \begin{axis}[
@@ -185,7 +185,7 @@
 \addplot[fill=colorCierre, draw=colorCierre!80] coordinates {
     (Meico Solar,80) (Olaflex,50) (Química AMG,60)
 };
-% Dificultades
+% Manejo de incidencias y reclamos
 \addplot[fill=colorDificultades, draw=colorDificultades!80] coordinates {
     (Meico Solar,90) (Olaflex,60) (Química AMG,40)
 };
@@ -193,10 +193,30 @@
 \addplot[fill=colorPruebas, draw=colorPruebas!80] coordinates {
     (Meico Solar,70) (Olaflex,100) (Química AMG,70)
 };
-\legend{B2B, Prospección, CRM, Cierre, Dificultades, Pruebas}
+\legend{B2B, Prospección, CRM, Cierre, Manejo de reclamos, Pruebas técnicas}
 \end{axis}
 \end{tikzpicture}
 \end{center}
+
+\vspace{0.3cm}
+\begin{multicols}{2}
+\small
+\textbf{\color{accent}B2B}\\
+Negociación con empresas.\\[4pt]
+\textbf{\color{accent}Prospección}\\
+Búsqueda, contacto, presentación de la empresa y calificación de clientes potenciales.\\[4pt]
+\textbf{\color{accent}CRM}\\
+Registro de negocios, seguimiento oportuno y gestión del proceso comercial.
+
+\columnbreak
+
+\textbf{\color{accent}Cierre}\\
+Negociación final y cierre efectivo de ventas.\\[4pt]
+\textbf{\color{accent}Manejo de reclamos}\\
+Gestión de clientes inconformes e incidencias.\\[4pt]
+\textbf{\color{accent}Pruebas técnicas}\\
+Capacitación de personal y pruebas de funcionamiento del material en diferentes ambientes de producción.
+\end{multicols}
 
 \cvsection{Experiencia Laboral}
 \cvevent{Ejecutiva Comercial Senior - Especialista de Línea}{Meico Solar}{Mayo 2024--Actualidad}{Bogotá, Colombia}
@@ -241,7 +261,9 @@
 % Inicio de sección en dos columnas
 \begin{multicols}{2}
 
-\cvsection{Negociación con Cliente}
+\cvsection{¿Qué información obtengo en una reunión comercial?}
+{\small\justifying En una reunión con el cliente, mediante las preguntas adecuadas, identifico la siguiente información clave:\par}
+\vspace{0.2cm}
 \noindent\makebox[\columnwidth][l]{%
 \hspace{-3cm}\wheelchart{2.5cm}{0.5cm}{%
 30/12em/wheel1/Conocimiento\\del negocio,
@@ -271,6 +293,7 @@
 
 \columnbreak
 
+% \vspace*{0.0003cm}
 \cvsection{Educación}
 \cvevent{Maestría en Ingeniería Química}{Universidad Nacional de Colombia}{2023--Actualidad}{Bogotá, Colombia}
 {\justifying Trabajo de grado en curso: Comparación de métodos multicriterio para la selección de tecnologías de captura y aplicación de CO en industrias de alta contribución de emisiones. El proyecto integra tecnologías como absorción con aminas, membranas y adsorción en sólidos, evaluadas mediante herramientas como AHP, TOPSIS y Fuzzy TOPSIS.\par}
@@ -280,8 +303,7 @@
 
 \cvsection{Intereses}
 \cvachievement{\faBook}{Desarrollo Profesional}{Lectura sobre tendencias comerciales, sostenibilidad industrial y nuevas tecnologías energéticas.}
-\cvachievement{\faPaw}{Bienestar Animal}{Cuidado de mascotas y apoyo a causas de protección animal.}
-\cvachievement{\faLeaf}{Sostenibilidad}{Interés en energías renovables, captura de carbono y procesos industriales sostenibles.}
+\cvachievement{\faHeart}{Desarrollo Personal}{Práctica de meditación, manejo de emociones, desarrollo de la creatividad y búsqueda constante de nuevas experiencias.}
 \cvachievement{\faUsers}{Networking}{Participación en eventos comerciales, ferias industriales y comunidades profesionales.}
 
 \end{multicols}
