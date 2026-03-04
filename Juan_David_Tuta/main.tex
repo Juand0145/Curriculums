@@ -1,0 +1,213 @@
+%%%%%%%%%%%%%%%%%
+% This is an example CV created using altacv.cls (v1.1, 21 November 2016) written by
+% LianTze Lim (liantze@gmail.com), based on the 
+% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+% 
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you want to use \orcid or the
+%% academicons icons, add "academicons"
+%% to the \documentclass options. 
+%% Then compile with XeLaTeX or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+\documentclass[10pt,a4paper]{altacv}
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages. 
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols.
+%% When using the "academicons" option,
+%% Compile with LuaLaTeX for best results. If you
+%% want to use XeLaTeX, you may need to install
+%% Academicons.ttf in your operating system's font %% folder.
+
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1cm,bottom=1cm}
+
+% Change the font if you want to.
+
+% If using pdflatex:
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{lato}
+
+% If using xelatex or lualatex:
+% \setmainfont{Lato}
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{000278}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Juan David \newline Tuta Botero}
+  \tagline{AI, Machine Learning Engineer, and Data Scientist}
+% Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
+\photo{5.5cm}{me}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{jdtutab@unal.edu.co}
+  \phone{(+57) 301 639 5759}
+  \linkedin{www.linkedin.com/in/tuta-engineer} 
+  \mailaddress{jdtutab@unal.edu.co}
+  \location{Professional Card: 26237}
+  \github{Juand0145}
+ % \location{Bogota, Colombia}
+%   \github{} % I'm just making this up though.
+%   \orcid{orcid.org/0000-0000-0000-0000} % Obviously making this up too. If you want to use this field (and also other academicons symbols), add "academicons" option to \documentclass{altacv}
+}
+
+%% Make the header extend all the way to the right, if you want. Extend the right margin by 8cm (=6.8cm marginparwidth + 1.2cm marginparsep)
+\begin{adjustwidth}{}{-7.2 cm}
+\makecvheader
+\end{adjustwidth}
+
+\cvsection{Work experience}%
+\marginpar{\vspace*{\dimexpr1pt-\baselineskip}\raggedright%
+
+%------------------------------------------------------------------------------------
+\cvsection{Education}
+\cvevent{Computer Science}{Bath university}{2026--Current}{Bath, England}
+Studies focused on applied mathematics, oriented toward quantitative analysis, modeling, and complex problem-solving.
+
+\cvevent{Machine Learning engineer and Data Scientist}{Holberton School}{Dec 2021--Sep 2022}{Tunez}
+Recommendation systems for a retail platform utilize cross-recommendations by analyzing information and employing clustering and cosine correlation techniques.
+
+\cvevent{Software Engineer}{Holberton School}{Feb 2021--Nov 2021}{San Francisco, USA}
+Capstone project: Develop a personalized hotel booking recommendation engine for a travel and tourism agency
+
+\cvevent{Chemical engineer}{Universidad Nacional de Colombia}{Aug 2012--Nov 2017}{Bogotá, Colombia}
+Enhancing the yield of pharmaceutical compounds in fungus industrial processes.
+%------------------------------------------------------------------------------------
+\cvsection{Technologies}
+\cvtag{Python}
+\cvtag{Tensorflow}
+\cvtag{Keras}
+\cvtag{R}
+\cvtag{MySQL}
+\cvtag{Matlab}
+\cvtag{Docker}
+\cvtag{Git}
+\cvtag{Numpy}
+\cvtag{Scikit-learn}
+\cvtag{Matplotlib}
+\cvtag{Pandas}
+\cvtag{Anaconda}
+\cvtag{AWS}
+\cvtag{JavaScript}
+\cvtag{HTML}
+\cvtag{CSS}
+\cvtag{Flask}
+\cvtag{Datadog}
+\cvtag{Nginx}
+\cvtag{Apache}
+
+\cvsection{Languages}
+\cvskill{Spanish}{5}
+\divider
+\cvskill{English}{4}
+\divider
+\cvskill{French}{1}
+\divider
+}
+\cvevent{AI Technical Lead}{Unosquare}{July 2024--Current}{Bogotá, Colombia}
+\begin{itemize}
+    \item Leveraging LLMs to create performance reports, improvement recommendations, and presentations for various tech sector workers, aimed at showcasing them as strong candidates for positions within the consulting firm, with all processes being developed in the Azure cloud.
+\end{itemize}
+\cvevent{Artificial intelligence engineer}{ABATech}{Feb 2023--July 2024}{Medellin, Colombia}
+\begin{itemize}
+    \item A scheduling assistant was developed using a convolutional neural network to understand client scheduling preferences in mental health clinics. This system is integrated with a heuristic optimizer that considers business, clinical, and operational guidelines to identify the most appropriate time slots for client treatment appointments. Additionally, the system was build using AWS.
+\end{itemize}
+\cvevent{Machine Learning Specialist}{Credibanco}{Oct 2022--Feb 2023}{Bogotá, Colombia}
+\begin{itemize}
+    \item I develop Machine Learning models able to predict when a customer is going to leave the business, financial fraud, Inventory management and storage.
+    \item Develop a model using customer service surveys so that it is able to differentiate categories such as training, products, service, etc.
+\end{itemize}
+\cvevent{Data Scientist Consultant}{Aviatecnologia}{Aug 2021--Nov 2021}{Bogotá, Colombia}
+\begin{itemize}
+    \item I Access, clean and manage the database of purchase and sales of hotels from several years to be able to feed a recommendation engine
+    \item I develop a personalized hotel booking recommendation engine for a travel and tourism agency
+\end{itemize}
+
+\cvevent{Research and Development Leader}{Invar Serapis}{Mar 2020 -- May 2020}{Bogotá, Colombia}
+Most relevant achievements:
+\begin{itemize}
+    \item Lead formulation projects on products responsible for combating COVID-19.
+     \item Processes optimization from, production, economic, safety and quality aspects.
+\end{itemize}
+
+\vspace{1cm}
+\cvsection{Complementary education}%
+\marginpar{\vspace*{\dimexpr1pt-\baselineskip}\raggedright%
+\cvsection{Professional Skills}
+\cvtag{Leadership}
+\cvtag{Effective communication}
+\cvtag{Critical thinking}
+\cvtag{Teamwork}
+\cvtag{Time Management}
+\cvtag{Creative vision}
+
+\cvsection{Interests}
+\cvachievement{\faSoccerBallO}{Sports}{Tennis, Basketball, Boxing.}
+\cvachievement{\faPaintBrush}{Art}{Draw, Origami, Sculpture.}
+\cvachievement{\faUniversity}{Academic}{New technologies, Computer sciences, Biotechnology.}
+}
+
+\cvevent{AWS Practitioner}{AWS}{Current}{}
+\divider
+
+\cvevent{Google Cloud Big Data and Machine Learning Fundamentals}{Coursera}{Jun 2020}{}
+\divider
+
+\cvevent{Leading diploma in food safety management based on ISO 22000: 2018 standard}{U. Cataluña. Colombia}{November 2020}{}
+\divider
+
+\cvevent{Theoretical-simulation course of reactors in excel.}{ACIQ, Colombia}{Octubre 2017}{}
+\divider
+\cvsection{A day of my life}
+
+% Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
+% \wheelchart{outer radius}{inner radius}{
+% comma-separated list of value/text width/color/detail}
+\wheelchart{1.5cm}{0.3cm}{%
+  5/8em/accent!10/Share with family and friends,
+  30/8em/accent/Professional development,
+  7/7em/accent!60/Eat balanced food,
+  8/8em/accent!10/Doing exercise,
+  20/8em/accent!30/Recharge batteries,
+  25/8em/accent!60/Read,
+  25/8em/accent!60/Learn new technologies}
+  
+\cvsection{Profesional references}
+\cvref{Javier Martinez, Aviatec CIO and founder , Industrial Engineer.}{+57  310 212 78 96} {}
+\divider
+\cvref{Camilo Castro, Chief leader research area Team Food Colombia Bogotá, Postdoctoral Chemical Engineering.}{+57 301 784 33 49}{}
+
+
+\cvsection{Personal references}
+\cvref{Edgar Emilio Tuta Pinzón, Plant instructor SENA electronic area, Electronic Engineer Universidad del Bosque.}{+57 300 568 55 64}
+\divider
+\cvref{Álvaro Andrés Romero Romero, Political scientist Javeriana University.}{+57 312 311 57 82}
+\divider
+
+\end{document}
