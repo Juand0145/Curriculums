@@ -37,6 +37,10 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[default]{lato}
+\usepackage{pgfplots}
+\usepgfplotslibrary{polar}
+\pgfplotsset{compat=1.17}
+\usepackage{ragged2e}
 
 % If using xelatex or lualatex:
 % \setmainfont{Lato}
@@ -49,6 +53,10 @@
 \colorlet{accent}{VividPurple}
 \colorlet{emphasis}{SlateGrey}
 \colorlet{body}{LightGrey}
+
+\definecolor{wheel1}{HTML}{1B4F72}
+\definecolor{wheel3}{HTML}{1ABC9C}
+\definecolor{radarCoral}{HTML}{C97B5B}
 
 % Change the bullets for itemize and rating marker
 % for \cvskill if you want to
@@ -82,23 +90,21 @@
 \makecvheader
 \end{adjustwidth}
 
-\cvsection{Work experience}%
+\bigskip%
 \marginpar{\vspace*{\dimexpr1pt-\baselineskip}\raggedright%
-
-%------------------------------------------------------------------------------------
 \cvsection{Education}
-\cvevent{Computer Science}{Bath university}{2026--Current}{Bath, England}
-Studies focused on applied mathematics, oriented toward quantitative analysis, modeling, and complex problem-solving.
+\cvevent{Computer Science}{Bath University}{2026--Current}{Bath, England}
+Applied mathematics, quantitative analysis and modeling.
 
-\cvevent{Machine Learning engineer and Data Scientist}{Holberton School}{Dec 2021--Sep 2022}{Tunez}
-Recommendation systems for a retail platform utilize cross-recommendations by analyzing information and employing clustering and cosine correlation techniques.
+\cvevent{ML Engineer \& Data Scientist}{Holberton School}{Dec 2021--Sep 2022}{Tunez}
+Recommendation systems using clustering and cosine similarity.
 
 \cvevent{Software Engineer}{Holberton School}{Feb 2021--Nov 2021}{San Francisco, USA}
-Capstone project: Develop a personalized hotel booking recommendation engine for a travel and tourism agency
+Hotel booking recommendation engine for a tourism agency.
 
-\cvevent{Chemical engineer}{Universidad Nacional de Colombia}{Aug 2012--Nov 2017}{Bogotá, Colombia}
-Enhancing the yield of pharmaceutical compounds in fungus industrial processes.
-%------------------------------------------------------------------------------------
+\cvevent{Chemical Engineer}{Universidad Nacional de Colombia}{Aug 2012--Nov 2017}{Bogotá, Colombia}
+Pharmaceutical compound yield optimization in industrial processes.
+
 \cvsection{Technologies}
 \cvtag{Python}
 \cvtag{Tensorflow}
@@ -129,35 +135,86 @@ Enhancing the yield of pharmaceutical compounds in fungus industrial processes.
 \divider
 \cvskill{French}{1}
 \divider
-}
+}%
+{\color{heading}\LARGE\bfseries\MakeUppercase{Work experience}}\\[-1ex]%
+{\color{heading}\rule{\linewidth}{2pt}\par}\medskip
 \cvevent{AI Technical Lead}{Unosquare}{July 2024--Current}{Bogotá, Colombia}
 \begin{itemize}
-    \item Leveraging LLMs to create performance reports, improvement recommendations, and presentations for various tech sector workers, aimed at showcasing them as strong candidates for positions within the consulting firm, with all processes being developed in the Azure cloud.
+    \item Leverage LLMs to generate performance reports, improvement recommendations, and presentations for tech sector workers, positioning them as strong candidates within the consulting firm. All processes developed on Azure cloud.
 \end{itemize}
-\cvevent{Artificial intelligence engineer}{ABATech}{Feb 2023--July 2024}{Medellin, Colombia}
+\cvevent{Artificial Intelligence Engineer}{ABATech}{Feb 2023--July 2024}{Medellin, Colombia}
 \begin{itemize}
-    \item A scheduling assistant was developed using a convolutional neural network to understand client scheduling preferences in mental health clinics. This system is integrated with a heuristic optimizer that considers business, clinical, and operational guidelines to identify the most appropriate time slots for client treatment appointments. Additionally, the system was build using AWS.
+    \item Developed a scheduling assistant using a convolutional neural network to learn client scheduling preferences in mental health clinics, integrated with a heuristic optimizer that considers business, clinical, and operational guidelines to assign optimal appointment time slots. Deployed on AWS.
 \end{itemize}
 \cvevent{Machine Learning Specialist}{Credibanco}{Oct 2022--Feb 2023}{Bogotá, Colombia}
 \begin{itemize}
-    \item I develop Machine Learning models able to predict when a customer is going to leave the business, financial fraud, Inventory management and storage.
-    \item Develop a model using customer service surveys so that it is able to differentiate categories such as training, products, service, etc.
+    \item Developed ML models for customer churn prediction, financial fraud detection, inventory management, and storage optimization.
+    \item Built a classification model using customer service surveys to categorize feedback into areas such as training, products, and service.
 \end{itemize}
 \cvevent{Data Scientist Consultant}{Aviatecnologia}{Aug 2021--Nov 2021}{Bogotá, Colombia}
 \begin{itemize}
-    \item I Access, clean and manage the database of purchase and sales of hotels from several years to be able to feed a recommendation engine
-    \item I develop a personalized hotel booking recommendation engine for a travel and tourism agency
+    \item Accessed, cleaned, and managed multi-year hotel purchase and sales databases to feed a recommendation engine.
+    \item Developed a personalized hotel booking recommendation engine for a travel and tourism agency.
 \end{itemize}
-
-\cvevent{Research and Development Leader}{Invar Serapis}{Mar 2020 -- May 2020}{Bogotá, Colombia}
-Most relevant achievements:
+\cvevent{Research and Development Leader}{Invar Serapis}{Mar 2020--May 2020}{Bogotá, Colombia}
 \begin{itemize}
-    \item Lead formulation projects on products responsible for combating COVID-19.
-     \item Processes optimization from, production, economic, safety and quality aspects.
+    \item Led formulation projects on products designed to combat COVID-19.
+    \item Optimized production processes across economic, safety, and quality dimensions.
 \end{itemize}
 
-\vspace{1cm}
-\cvsection{Complementary education}%
+\newpage
+\begin{adjustwidth}{}{-7.2cm}
+\cvsection{Technical Skills}
+\begin{center}
+\begin{tikzpicture}
+\begin{polaraxis}[
+    width=5.5cm,
+    height=5.5cm,
+    grid=both,
+    major grid style={dashed, gray!40},
+    minor grid style={dashed, gray!20},
+    xtick={90,150,210,270,330,30},
+    xticklabels={B2B, Prosp., CRM, Cierre de negociaciones, Manejo reclamos, Pruebas t\'{e}cnicas},
+    xticklabel style={font=\tiny},
+    ytick={20,40,60,80,100},
+    yticklabels={20,40,60,80,100},
+    yticklabel style={font=\tiny},
+    ymin=0, ymax=100,
+    legend style={
+        at={(0.5,-0.15)},
+        anchor=north,
+        legend columns=3,
+        font=\tiny,
+    },
+]
+\addplot+[draw=wheel1, mark=*, thick, mark options={fill=wheel1, draw=wheel1}] coordinates {
+    (90,100) (150,90) (210,100) (270,80) (330,90) (30,70) (90,100)
+};
+\addlegendentry{Meico Solar (2024--2026)}
+\addplot+[draw=wheel3, mark=*, thick, mark options={fill=wheel3, draw=wheel3}] coordinates {
+    (90,80) (150,50) (210,10) (270,70) (330,80) (30,100) (90,80)
+};
+\addlegendentry{Olaflex (2022--2024)}
+\addplot+[draw=radarCoral, mark=*, thick, mark options={fill=radarCoral, draw=radarCoral}] coordinates {
+    (90,50) (150,60) (210,30) (270,60) (330,40) (30,70) (90,50)
+};
+\addlegendentry{Qu\'{i}mica MG (2022)}
+\end{polaraxis}
+\end{tikzpicture}
+\end{center}
+
+\vspace{0.1cm}
+{\scriptsize\justifying
+\textbf{\color{accent}B2B:} Negociaci\'{o}n con empresas.\\
+\textbf{\color{accent}Prospecci\'{o}n:} B\'{u}squeda, contacto, presentaci\'{o}n de la empresa y calificaci\'{o}n de clientes potenciales.\\
+\textbf{\color{accent}CRM:} Registro de negocios, seguimiento oportuno y gesti\'{o}n del proceso comercial.\\
+\textbf{\color{accent}Cierre:} Negociaci\'{o}n final y cierre efectivo de ventas.\\
+\textbf{\color{accent}Manejo de reclamos:} Gesti\'{o}n de clientes inconformes e incidencias.\\
+\textbf{\color{accent}Pruebas t\'{e}cnicas:} Capacitaci\'{o}n de personal y pruebas de funcionamiento del material en diferentes ambientes de producci\'{o}n.\par
+}
+\end{adjustwidth}
+
+\medskip%
 \marginpar{\vspace*{\dimexpr1pt-\baselineskip}\raggedright%
 \cvsection{Professional Skills}
 \cvtag{Leadership}
@@ -171,7 +228,9 @@ Most relevant achievements:
 \cvachievement{\faSoccerBallO}{Sports}{Tennis, Basketball, Boxing.}
 \cvachievement{\faPaintBrush}{Art}{Draw, Origami, Sculpture.}
 \cvachievement{\faUniversity}{Academic}{New technologies, Computer sciences, Biotechnology.}
-}
+}%
+{\color{heading}\LARGE\bfseries\MakeUppercase{Complementary education}}\\[-1ex]%
+{\color{heading}\rule{\linewidth}{2pt}\par}\medskip
 
 \cvevent{AWS Practitioner}{AWS}{Current}{}
 \divider
@@ -184,30 +243,5 @@ Most relevant achievements:
 
 \cvevent{Theoretical-simulation course of reactors in excel.}{ACIQ, Colombia}{Octubre 2017}{}
 \divider
-\cvsection{A day of my life}
-
-% Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
-% \wheelchart{outer radius}{inner radius}{
-% comma-separated list of value/text width/color/detail}
-\wheelchart{1.5cm}{0.3cm}{%
-  5/8em/accent!10/Share with family and friends,
-  30/8em/accent/Professional development,
-  7/7em/accent!60/Eat balanced food,
-  8/8em/accent!10/Doing exercise,
-  20/8em/accent!30/Recharge batteries,
-  25/8em/accent!60/Read,
-  25/8em/accent!60/Learn new technologies}
   
-\cvsection{Profesional references}
-\cvref{Javier Martinez, Aviatec CIO and founder , Industrial Engineer.}{+57  310 212 78 96} {}
-\divider
-\cvref{Camilo Castro, Chief leader research area Team Food Colombia Bogotá, Postdoctoral Chemical Engineering.}{+57 301 784 33 49}{}
-
-
-\cvsection{Personal references}
-\cvref{Edgar Emilio Tuta Pinzón, Plant instructor SENA electronic area, Electronic Engineer Universidad del Bosque.}{+57 300 568 55 64}
-\divider
-\cvref{Álvaro Andrés Romero Romero, Political scientist Javeriana University.}{+57 312 311 57 82}
-\divider
-
 \end{document}

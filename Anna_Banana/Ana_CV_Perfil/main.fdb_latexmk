@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1772663640.82176 "/home/juand/Projects/Personal/Curriculums/Anna_Banana/Ana_CV_Perfil/main.tex" "main.pdf" "main" 1772663642.04229 0
+["pdflatex"] 1772668021.21977 "/home/juand/Projects/Personal/Curriculums/Anna_Banana/Ana_CV_Perfil/main.tex" "main.pdf" "main" 1772668022.45562 0
   "/etc/texmf/web2c/texmf.cnf" 1753541334.40824 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/juand/Projects/Personal/Curriculums/Anna_Banana/Ana_CV_Perfil/main.tex" 1772663029.53932 13795 39bfdc024554008fcf1caf9701473ae6 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc" 1463430686 2679 32dd8ae231bf4a0752b98f62dc097183 ""
@@ -189,7 +189,7 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1770048377.92895 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1770048496 8214395 6f4669b1a8bb46ac90dc1c968e256a65 ""
   "altacv.cls" 1772663029.53532 8047 e879a496b8051fa63f4055ff1d9cccf2 ""
-  "main.aux" 1772663641.89157 32 044b7f8fc9779af7531264e0c5c84b6d "pdflatex"
+  "main.aux" 1772668022.34744 32 044b7f8fc9779af7531264e0c5c84b6d "pdflatex"
   "main.tex" 1772663029.53932 13795 39bfdc024554008fcf1caf9701473ae6 ""
   "me.png" 1772663029.53932 50195 8e42aa26914e3df4ae54190173d00e52 ""
   (generated)
