@@ -1,11 +1,11 @@
 # Fdb version 4
-["biber main"] 1772668768.33443 "main.bcf" "main.bbl" "main" 1772668772.3756 0
-  "main.bcf" 1772668772.23655 107401 ae11df533584d58038a89c93f1694868 "pdflatex"
+["biber main"] 1772669342.13356 "main.bcf" "main.bbl" "main" 1772669346.20279 0
+  "main.bcf" 1772669346.06583 107401 ae11df533584d58038a89c93f1694868 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1772668770.79356 "main.tex" "main.pdf" "main" 1772668772.37594 0
+["pdflatex"] 1772669344.59998 "main.tex" "main.pdf" "main" 1772669346.20312 0
   "/etc/texmf/web2c/texmf.cnf" 1753541334.40824 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomeone.enc" 1463430686 1687 f004baecce60175c6453d0e3f808cf20 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc" 1463430686 2679 32dd8ae231bf4a0752b98f62dc097183 ""
@@ -213,10 +213,10 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1770048377.92895 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1770048496 8214395 6f4669b1a8bb46ac90dc1c968e256a65 ""
   "altacv.cls" 1772664724.27852 8074 d1e0d4e733d2cc0ac61681aa6375780d ""
-  "main.aux" 1772668772.23222 141 b786abeba31201d5f47d0115c81de561 "pdflatex"
-  "main.bbl" 1772668769.17288 466 ee04f40f768daeed26442158e95aba61 "biber main"
-  "main.run.xml" 1772668772.24088 2307 8845b0ade2d45e62d45995dec6ec4831 "pdflatex"
-  "main.tex" 1772668762.16155 9517 3f6103a558771f7455dcee09d8e055ce ""
+  "main.aux" 1772669346.05716 141 b786abeba31201d5f47d0115c81de561 "pdflatex"
+  "main.bbl" 1772669342.93716 466 ee04f40f768daeed26442158e95aba61 "biber main"
+  "main.run.xml" 1772669346.06583 2307 8845b0ade2d45e62d45995dec6ec4831 "pdflatex"
+  "main.tex" 1772669334.98116 9022 dc0f27c9b99b43d6ac643c3bb60e71e4 ""
   "me.png" 1772663732.73066 103133 d095bd5ba924b599fad4dcc865672026 ""
   (generated)
   "main.aux"

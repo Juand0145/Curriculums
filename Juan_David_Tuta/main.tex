@@ -54,9 +54,10 @@
 \colorlet{emphasis}{SlateGrey}
 \colorlet{body}{LightGrey}
 
-\definecolor{wheel1}{HTML}{1B4F72}
-\definecolor{wheel3}{HTML}{1ABC9C}
-\definecolor{radarCoral}{HTML}{C97B5B}
+\definecolor{colUno}{HTML}{1B4F72}
+\definecolor{colABA}{HTML}{1ABC9C}
+\definecolor{colCre}{HTML}{C97B5B}
+\definecolor{colAvi}{HTML}{8E44AD}
 
 % Change the bullets for itemize and rating marker
 % for \cvskill if you want to
@@ -168,14 +169,14 @@ Pharmaceutical compound yield optimization in industrial processes.
 \begin{center}
 \begin{tikzpicture}
 \begin{polaraxis}[
-    width=5.5cm,
-    height=5.5cm,
+    width=9.5cm,
+    height=9.5cm,
     grid=both,
     major grid style={dashed, gray!40},
     minor grid style={dashed, gray!20},
     xtick={90,150,210,270,330,30},
-    xticklabels={B2B, Prosp., CRM, Cierre de negociaciones, Manejo reclamos, Pruebas t\'{e}cnicas},
-    xticklabel style={font=\tiny},
+    xticklabels={Machine Learning, Deep Learning, NLP, Data Engineering, Cloud \& DevOps, Tech Leadership},
+    xticklabel style={font=\small},
     ytick={20,40,60,80,100},
     yticklabels={20,40,60,80,100},
     yticklabel style={font=\tiny},
@@ -183,35 +184,31 @@ Pharmaceutical compound yield optimization in industrial processes.
     legend style={
         at={(0.5,-0.15)},
         anchor=north,
-        legend columns=3,
-        font=\tiny,
+        legend columns=4,
+        font=\small,
     },
 ]
-\addplot+[draw=wheel1, mark=*, thick, mark options={fill=wheel1, draw=wheel1}] coordinates {
-    (90,100) (150,90) (210,100) (270,80) (330,90) (30,70) (90,100)
+\addplot+[draw=colUno, mark=*, thick, mark options={fill=colUno, draw=colUno}] coordinates {
+    (90,40) (150,80) (210,100) (270,30) (330,80) (30,100) (90,40)
 };
-\addlegendentry{Meico Solar (2024--2026)}
-\addplot+[draw=wheel3, mark=*, thick, mark options={fill=wheel3, draw=wheel3}] coordinates {
-    (90,80) (150,50) (210,10) (270,70) (330,80) (30,100) (90,80)
+\addlegendentry{Unosquare}
+\addplot+[draw=colABA, mark=*, thick, mark options={fill=colABA, draw=colABA}] coordinates {
+    (90,80) (150,100) (210,20) (270,40) (330,80) (30,60) (90,80)
 };
-\addlegendentry{Olaflex (2022--2024)}
-\addplot+[draw=radarCoral, mark=*, thick, mark options={fill=radarCoral, draw=radarCoral}] coordinates {
-    (90,50) (150,60) (210,30) (270,60) (330,40) (30,70) (90,50)
+\addlegendentry{ABATech}
+\addplot+[draw=colCre, mark=*, thick, mark options={fill=colCre, draw=colCre}] coordinates {
+    (90,100) (150,40) (210,60) (270,70) (330,40) (30,30) (90,100)
 };
-\addlegendentry{Qu\'{i}mica MG (2022)}
+\addlegendentry{Credibanco}
+\addplot+[draw=colAvi, mark=*, thick, mark options={fill=colAvi, draw=colAvi}] coordinates {
+    (90,70) (150,20) (210,20) (270,100) (330,20) (30,20) (90,70)
+};
+\addlegendentry{Aviatecnologia}
 \end{polaraxis}
 \end{tikzpicture}
 \end{center}
 
 \vspace{0.1cm}
-{\scriptsize\justifying
-\textbf{\color{accent}B2B:} Negociaci\'{o}n con empresas.\\
-\textbf{\color{accent}Prospecci\'{o}n:} B\'{u}squeda, contacto, presentaci\'{o}n de la empresa y calificaci\'{o}n de clientes potenciales.\\
-\textbf{\color{accent}CRM:} Registro de negocios, seguimiento oportuno y gesti\'{o}n del proceso comercial.\\
-\textbf{\color{accent}Cierre:} Negociaci\'{o}n final y cierre efectivo de ventas.\\
-\textbf{\color{accent}Manejo de reclamos:} Gesti\'{o}n de clientes inconformes e incidencias.\\
-\textbf{\color{accent}Pruebas t\'{e}cnicas:} Capacitaci\'{o}n de personal y pruebas de funcionamiento del material en diferentes ambientes de producci\'{o}n.\par
-}
 \end{adjustwidth}
 
 \medskip%
